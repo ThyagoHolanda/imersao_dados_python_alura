@@ -151,7 +151,8 @@ if check_password():
         else:
             st.warning("Nenhum dado para exibir no gráfico de países.")
 
-# --- Tabela de Dados Detalhados ---
-st.subheader("Dados Detalhados")
+    # --- Tabela de Dados Detalhados ---
+    st.subheader("Dados Detalhados")
+    
+    st.dataframe(df_filtrado)
 
-st.dataframe(df_filtrado)
